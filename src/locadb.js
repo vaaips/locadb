@@ -1,20 +1,20 @@
 export default {
   /**
-   * Store data
+   * Set data
    * @param {String} key 
    * @param {Any} value 
    * @returns {undefined} nothing
    */
-  store(key, value) {
+  set(key, value) {
     localStorage.setItem(key, value)
   },
 
   /**
-   * Collect data
+   * Get data
    * @param {String} key 
    * @returns {Any} value
    */
-  collect(key) {
+  get(key) {
     return localStorage.getItem(key)
   },
 
