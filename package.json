@@ -1,0 +1,25 @@
+{
+  "name": "locadb",
+  "version": "1.0.0",
+  "description": "Local web database driver",
+  "main": "src/locadb.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vaaips/locadb.git"
+  },
+  "keywords": [
+    "web",
+    "database",
+    "driver",
+    "javascript"
+  ],
+  "author": "vaaips",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vaaips/locadb/issues"
+  },
+  "homepage": "https://github.com/vaaips/locadb#readme"
+}
