@@ -1,52 +1,31 @@
 export default {
   store(key, value) {
-    return new Promise((resolve, reject) => {
-      localStorage.setItem(key, value)
-      var response = localStorage.getItem(key)
-      resolve(response)
-    })
+    localStorage.setItem(key, value)
   },
 
   collect(key) {
-    return new Promise((resolve, reject) => {
-      var response = localStorage.getItem(key)
-      resolve(response)
-    })
+    return localStorage.getItem(key)
   },
 
   remove(key) {
-    return new Promise((resolve, reject) => {
-      localStorage.removeItem(key)
-      resolve()
-    })
+    localStorage.removeItem(key)
   },
 
   clear() {
-    return new Promise((resolve, reject) => {
-      localStoage.clear()
-      resolve()
-    })
+    localStorage.clear()
   },
 
   keys() {
-    return new Promise((resolve, reject) => {
-      var keys = Object.keys(localStorage)
-      resolve(keys)
-    })
+    return Object.keys(localStorage)
   },
 
   size() {
-    return new Promise((resolve, reject) => {
-      var keys = Object.keys(localStorage)
-      resolve(keys.length)
-    })
+    const keys = this.keys()
+    return keys.length
   },
 
   values() {
-    return new Promise((resolve, reject) => {
-      var keys = Object.keys(localStorage)
-      var values = keys.map(key => localStorage.getItem(key))
-      resolve(values)
-    })
+    const keys = this.keys()
+    return keys.map(key => localStorage.getItem(key))
   }
 }
