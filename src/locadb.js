@@ -19,7 +19,7 @@ export default {
   },
 
   /**
-   * Remove a specific data
+   * Remove a data
    * @param {String} key 
    * @returns {undefined} nothing
    */
@@ -28,7 +28,7 @@ export default {
   },
 
   /**
-   * Clear all data
+   * Remove all data
    * @returns {undefined} nothing
    */
   clear() {
@@ -36,15 +36,7 @@ export default {
   },
 
   /**
-   * Collect keys
-   * @returns {Array} keys
-   */
-  keys() {
-    return Object.keys(localStorage)
-  },
-
-  /**
-   * Data keys size
+   * Get database size
    * @returns {number} size
    */
   size() {
@@ -53,7 +45,15 @@ export default {
   },
 
   /**
-   * Collect values
+   * Get keys of all data
+   * @returns {Array} keys
+   */
+  keys() {
+    return Object.keys(localStorage)
+  },
+
+  /**
+   * Get values of all data
    * @returns {Array} values
    */
   values() {
