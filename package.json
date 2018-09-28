@@ -4,7 +4,8 @@
   "description": "Local web database driver",
   "main": "src/locadb.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config webpack.config.js"
   },
   "repository": {
     "type": "git",
@@ -21,5 +22,9 @@
   "bugs": {
     "url": "https://github.com/vaaips/locadb/issues"
   },
-  "homepage": "https://github.com/vaaips/locadb#readme"
+  "homepage": "https://github.com/vaaips/locadb#readme",
+  "devDependencies": {
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.1"
+  }
 }
