@@ -4,7 +4,7 @@
   "description": "Local web database driver",
   "main": "src/locadb.js",
   "scripts": {
-    "test": "http-server ./test -o",
+    "test": "webpack --config webpack.test.js && http-server ./test -o",
     "build": "webpack --config webpack.config.js"
   },
   "repository": {
