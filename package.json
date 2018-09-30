@@ -5,7 +5,7 @@
   "main": "src/locadb.js",
   "scripts": {
     "test": "webpack-dev-server --entry ./test/",
-    "build": "webpack --config webpack.config.js"
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
