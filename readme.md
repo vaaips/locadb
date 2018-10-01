@@ -18,3 +18,8 @@ locadb.set('name', 'John Deo')
 |----------|----------------------------|---------------|----------------------------------|
 | `set`    | `key{string}, value{any}`  | `undefined`   | `locadb.set(key, value)`         |
 | `get`    | `key{string}`              | `any`         | `locadb.get(key)`                |
+| `remove` | `key{string}`              | `undefined`   | `locadb.remove(key)`             |
+| `clear`  | `NA`                       | `undefined`   | `locadb.clear()`                 |
+| `size`   | `NA`                       | `number`      | `locadb.size()`                  |
+| `keys`   | `NA`                       | `array`       | `locadb.keys()`                  |
+| `values` | `NA`                       | `array`       | `locadb.values()`                |
