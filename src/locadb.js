@@ -6,6 +6,7 @@ export default {
    * @returns {undefined} nothing
    */
   set(key, value) {
+    value = JSON.stringify(value)
     localStorage.setItem(key, value)
   },
 
@@ -15,7 +16,8 @@ export default {
    * @returns {Any} value
    */
   get(key) {
-    return localStorage.getItem(key)
+    var value = localStorage.getItem(key)
+    return JSON.parse(value)
   },
 
   /**
